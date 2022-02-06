@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+:roots {
+  /* Primary */
+  --Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+
+  /* Neutral */
+
+  --Pale-Blue: hsl(243, 100%, 93%);
+  --Grayish-Blue: hsl(229, 7%, 55%);
+  --Dark-Blue: hsl(228, 56%, 26%);
+  --Very-Dark-Blue: hsl(229, 57%, 11%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  background-color: hsl(229, 57%, 11%);
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+  background-color: hsl(228, 56%, 26%);
+  position: relative;
+  margin-left: 350px;
+  border: 0 solid;
+  border-radius: 20px;
+  padding: 50px 80px;
+  padding-right: 30px;
+  padding-left: 45px;
+  margin-top: 80px;
+  z-index: 950;
+}
+
+.data-left {
+  display: flex;
+}
+
+.data-left span {
+  color: white;
+  font-weight: 600;
+}
+
+.data-left p {
+  color: hsl(229, 7%, 55%);
+}
+
+#comment-box {
+  display: flex;
+  background-color: white;
+  position: relative;
+  padding: 10px 25px;
+  color: white;
+  border-radius: 10px 10px 0px 10px;
+}
+
+#comment-box::after {
+  content: "";
+  position: absolute;
+  height: 25px;
+  width: 28px;
+  bottom: -24px;
+  left: 84%;
+  background-color: white;
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+#comment-box span {
+  color: black;
+  font-size: 40px;
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+#comment-box p {
+  margin-top: 17px;
+  font-weight: 600;
+}
+
+#comment-box {
+  position: absolute;
+  top: -25%;
+  left: 65%;
+}
+
+form {
+  display: inline-flex;
+  margin-top: 5px;
+}
+input {
+  background-color: hsl(229, 57%, 11%);
+  width: 100%;
+  padding-right: 350px;
+  border-radius: 35px;
+  border: 2px solid hsl(229, 57%, 11%);
+  opacity: 0.8;
+}
+input:focus {
+  outline: none;
+}
+
+form ::placeholder {
+  position: absolute;
+  background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  padding-left: 400px;
+  bottom: 0;
+}
+
+::placeholder {
+  position: absolute;
+  border: 0 solid white;
+  border-radius: 35px 35px 25px 35px;
+  color: white;
+}
+
+ul {
+  margin-top: 10px;
+  list-style-type: none;
+  display: flex;
+  font-weight: 600;
+}
+
+ul li span {
+  font-size: 12px;
+}
+
+li:first-child {
+  color: white;
+  margin-right: 350px;
+}
+
+li:last-child {
+  color: white;
+  position: absolute;
+  margin-left: 472px;
+}
+
+.image-1 {
+  margin-top: 50px;
+  position: absolute;
+  right: 0;
+  bottom: -80px;
+  z-index: 800;
+}
+
+.container-1 {
+  position: absolute;
+  background-color: hsl(228, 56%, 26%);
+  margin-bottom: -40px;
+  margin-right: 670px;
+  border: 0 solid;
+  padding-top: 100px;
+  z-index: 900;
+  padding: 50px;
+  padding-left: 40px;
+  border-radius: 20px 85px 20px 20px;
+  padding-right: 120px;
+  padding-top: 30px;
+}
+
+.icon-document {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.icon-1 {
+  padding: 15px;
+  margin-right: 10px;
+  border: 0 solid;
+  border-radius: 10px;
+  background-color: hsl(229, 57%, 11%);
+}
+
+.icon-2 {
+  padding: 15px;
+  margin-right: 10px;
+  border: 0 solid;
+  border-radius: 10px;
+  background-color: hsl(229, 57%, 11%);
+}
+
+.icon-3 {
+  padding: 15px;
+  margin-right: 10px;
+  border: 0 solid;
+  border-radius: 10px;
+  background-color: hsl(229, 57%, 11%);
+}
+
+.Fylo {
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
